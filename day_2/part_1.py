@@ -11,3 +11,13 @@ def Run(input):
         elif line[0] == 'forward':
             hor += int(line[1])
     return str(ver * hor)
+
+if __name__ == '__main__':
+    result = Run('''forward 5
+down 5
+forward 8
+up 3
+down 8
+forward 2''')
+    aoc = '150'
+    print(f'AoC: {aoc}\nYou: {result}{"  ☑" if result == aoc else "  ☒"}')

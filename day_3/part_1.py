@@ -13,3 +13,19 @@ def Run(input):
     gamma = int(''.join(x for x in most_common), 2)
     epsilon = int(''.join(x for x in least_common), 2)
     return str(gamma * epsilon)
+
+if __name__ == '__main__':
+    result = Run('''00100
+11110
+10110
+10111
+10101
+01111
+00111
+11100
+10000
+11001
+00010
+01010''')
+    aoc = '198'
+    print(f'AoC: {aoc}\nYou: {result}{"  ☑" if result == aoc else "  ☒"}')
