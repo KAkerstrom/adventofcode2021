@@ -3,6 +3,8 @@ import day_1.part_1
 import day_1.part_2
 import day_2.part_1
 import day_2.part_2
+import day_3.part_1
+import day_3.part_2
 
 directory = os.path.abspath(os.path.dirname(__file__))
 
@@ -24,5 +26,10 @@ with open(f'{directory}\\day_2\\input.txt', 'r') as file:
     contents = file.read()
     GetAndPrintResults(2, 1, contents, day_2.part_1.Run)
     GetAndPrintResults(2, 2, contents, day_2.part_2.Run)
+
+with open(f'{directory}\\day_3\\input.txt', 'r') as file:
+    contents = file.read()
+    GetAndPrintResults(3, 1, contents, day_3.part_1.Run)
+    GetAndPrintResults(3, 2, contents, day_3.part_2.Run)
 
 print('\n\n')
